@@ -9,7 +9,7 @@ const wordBank =
 let secretWord, maxGuesses, guessesMade, keyboardButtons, countdown, correctLetters
 secretWord = ''
 maxGuesses = 6
-guessesMade = 2
+guessesMade = 0
 keyboardButtons = 
 ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 
@@ -110,11 +110,11 @@ const startNewGame = () => {
 
 generateRandomWord()
 generateKeyboard()
+runningTimer()
 generateUnderscores()
+updateHangingImg()
 showUserGuesses()
 userLostGame()
-updateHangingImg()
-runningTimer()
 
 
 
@@ -126,9 +126,7 @@ runningTimer()
 
 
 
-/*
 
-*/
 
 
 // Check to see if the letter the user picks is in the random word
@@ -180,9 +178,6 @@ runningTimer()
 
 /*
 
-// 
-
-
 playerOneScore = 0
 playerTwoScore = 0
 let updatePlayer1 = document.getElementById('score1')
@@ -219,20 +214,5 @@ const checkGuess = (letterSelected) => {
 	
 	
 }
-
-
-
-
-
-
-
-			<div class="instructionParas">
-				<p class="instructions">The objective of the game is to guess as many words as you can, within the allotted time. For each word, you will be given 45 seconds to guess. If you can successfully guess the word, you score a point and move on to the next word.</p>
-				<br>
-				<p class="instructions">You will be given one free hint per word, to help you guess. If you can't make a guess before the time runs out, you lose your turn and it's player 2's turn.</p>
-				<br>
-				<p class="instructions">If you make 6 wrong guesses on the same word, completing the hanging body, you lose your turn and it's player 2's turn.</p>
-				<br>
-				<p class="instructions">THE PLAYER WITH THE MOST COMPLETED WORDS IN THE ROUND WINS!</p>
-			</div>
+		
 */
