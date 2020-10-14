@@ -4,12 +4,20 @@
 	padding: 0;
 }
 
+body {
+	background: black;
+
+}
+
+.container {
+	background: grey;
+}
 
 div .headings {
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 10px;
-	padding: 10px 0;
+	padding: 20px 0;
 	font-family: 'Run!';
 	background-color: olive;
 }
@@ -22,56 +30,54 @@ div .headings h1 .hang {
 	color: red;
 }
 
-div .headings h5 .before {
+div .headings .before {
 	color: red;
 }
 
-div .playersDiv {
-	display: flex;
-	justify-content: space-around;
-	font-size: 2em;
-	text-transform: uppercase;
+#instructionParas {
 	font-family: 'Headliner No. 45';
+	background: olive;
 	color: black;
-	margin-bottom: -100px;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 100px;
+	padding: 20px;
 }
 
-
-div #score1 {
-	margin-top: 10px;
+.playerDiv {
 	display: flex;
-	justify-content: space-around;
-	font-size: 3rem;
+	justify-content: space-between;
+	font-size: 2rem;
+	font-family: 'Headliner No. 45';
+	color: white;
+	margin-bottom: -60px;
 }
 
-div #score2 {
-	margin-top: 10px;
-	display: flex;
-	justify-content: space-around;
-	font-size: 3rem;
-}
 
-div .imgDiv {
+.hangmanContainer {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 20px;
 }
 
 #underscores {
-	display: flex;
-	justify-content: center;
-	font-size: 2rem;
-	margin: 40px 0 20px 0;
-	font-family: 'Headliner No. 45';
-	letter-spacing: 5px;
+	text-align: center;
+	font-size: 1.7rem;
+	font-family: 'Run!';
+	color: white;
+	margin-bottom: 20px;
 }
 
-#guesses {
-	display: flex;
-	justify-content: center;
+.keyboardContainer {
+	text-align: center;
 }
 
-div #keyboard {
-	display: flex;
-	justify-content: center;
+.keyboardButtons {
+	border: 1px solid black;
 }
 
+.resetButton {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 60px;
+}

@@ -8,34 +8,42 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-	<div class="container-fluid">
+	<div class="container">
 		<div class="headings">
 			<h1 class="nameOfGame">Speed <span class="hang">Hangman</span></h1>
 			<h5>Guess the word <span class="before">before</span> time runs out</h5>
+			<h6 id="animal">Animal <span class="before">Edition</span> </h6>
 		</div>
 
-		<div class="playersDiv">
-			<div id="player1">
-				<p><i class="fas fa-gamepad"></i> Player 1</p>
-				<div id="score1">0</div>
-			</div>
-			<div>
-				<p><i class="fas fa-stopwatch"></i> : <span id="time"></span></p>
-			</div>
-			<div id="player2">
-				<p><i class="fas fa-gamepad"></i> Player 2</p>
-				<div id="score2">0</div>
-			</div>
+		<div class="playerDiv" id="playerHeadings">
+			<p id="guesses"></p>
+			<p><i class="fas fa-stopwatch"></i>Time Left : <span id="time"></span></p>
 		</div>
-		<div class="imgDiv">
+
+		<div id="instructionParas">
+			<p class="instructions">The objective of the game is to try to guess a word within the allotted time. You'll be given 30 seconds to guess. If you can successfully guess the word, you win the round.</p>
+			<p class="instructions">If you can't make a guess before the time runs out, you lose the game. If you make 6 wrong guesses on the same word, completing the hanging body, you lose the round.</p>
+			<p class="instructions">PRESS THE START GAME BUTTON TO BEGIN. GOOD LUCK!</p>
+			<button id="startGame" class="btn btn-danger btn-lg p5" onclick="unhideGame()">Start Game</button>
+		</div>
+
+		<div class="hangmanContainer">
 			<img id="hangman" src="./images/0.jpg">
 		</div>
+
 		<div class="underscoreDiv">
-			<p id="underscores">Words go here</p>
+			<p id="underscores"></p>
 		</div>
-			<p id="guesses"></p>
+		
+		<div class='keyboardContainer'>
 			<div id="keyboard"></div>
-			<div id="animal"></div>
+		</div>
+
+		<p id="guesses"></p>
+
+		<div class="resetButton">
+			<button class="btn btn-primary" id= "resetGame" onclick="resetGame()">Reset Game</button>
+		</div>
 	</div>
 
 
