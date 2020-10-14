@@ -4,8 +4,6 @@ Speed-Hangman is the classic game of hangman, but with a twist! The objective of
 If you can successfully guess the word, you win the round. If you can't make a guess before the time runs out, you lose the game. If you make 6 wrong guesses on the same word, 
 completing the hanging body, you lose the round.
 
-PRESS THE START GAME BUTTON TO BEGIN. GOOD LUCK!
-
 ## Getting Started
 After reading the instructions, just press the start button and immediately start playing.
 ### Prerequisites
